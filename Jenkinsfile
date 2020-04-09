@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Docker Remove Image') {
       steps {
-        sh "docker rmi dockertest000/podinfo:${env.BUILD_NUMBER}"
+        sh "docker rmi -f dockertest000/podinfo:${env.BUILD_NUMBER}"
       }
     }
     stage('Apply Kubernetes Files') {
