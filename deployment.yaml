@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: ap18/podinfo:{{BUILD_NUMBER}}
+        image: dockertest000/podinfo:{{BUILD_NUMBER}}
         imagePullPolicy: Always
         ports:
         - containerPort: 4444
